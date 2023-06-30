@@ -595,14 +595,14 @@ md"### Importando os dados utilizados"
 
 # ╔═╡ b16f0882-61e1-4be7-ade1-3618b061af55
 begin
-	z = CSV.File("data/dataset_HRISTROPULOS_1.csv", header = false)|> DataFrame |> Matrix
-	zo = CSV.File("data/dataset_HRISTROPULOS_2.csv", header = false) |> DataFrame |> Matrix
-	z_matlab = CSV.File("data/dataset_HRISTROPULOS_3.csv", header = false) |> DataFrame |> Matrix
+	z = CSV.File("dataset_HRISTROPULOS_1.csv", header = false)|> DataFrame |> Matrix
+	zo = CSV.File("dataset_HRISTROPULOS_2.csv", header = false) |> DataFrame |> Matrix
+	z_matlab = CSV.File("dataset_HRISTROPULOS_3.csv", header = false) |> DataFrame |> Matrix
 end;
 
 # ╔═╡ b4b0fc38-bb7a-44fa-9de6-0f613a904c12
 begin
-	dh_10 = DataFrame(CSV.File("data/dataset_DIAMANTINO_2.csv"))
+	dh_10 = DataFrame(CSV.File("dataset_DIAMANTINO_2.csv"))
 	local x = []
 	local y = []
 	dh_10.X = round.(dh_10.X, RoundUp)
@@ -626,7 +626,7 @@ end
 
 # ╔═╡ abfd6a59-7e59-43ef-ab70-1de70ab477fd
 begin
-	dh_30 = DataFrame(CSV.File("data/dataset_DIAMANTINO_1.csv"))
+	dh_30 = DataFrame(CSV.File("dataset_DIAMANTINO_1.csv"))
 	local x = []
 	local y = []
 	dh_30.X = round.(dh_30.X, RoundUp)
